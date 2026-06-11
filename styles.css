@@ -9,13 +9,10 @@
     --secondary-color: #1e4620;
     --accent-color: #f39c12;
     --success-color: #27ae60;
-    --danger-color: #e74c3c;
-    --warning-color: #f39c12;
     --light-bg: #ecf0f1;
     --dark-text: #2c3e50;
     --border-color: #bdc3c7;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 html {
@@ -53,12 +50,6 @@ body {
     letter-spacing: 1px;
 }
 
-.header .subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-    letter-spacing: 0.5px;
-}
-
 /* Main Content */
 .main-content {
     background: white;
@@ -90,51 +81,27 @@ body {
 .status-icon {
     font-size: 2em;
     flex-shrink: 0;
-}
-
-.status-text h2 {
     color: var(--success-color);
-    margin-bottom: 8px;
-    font-size: 1.4em;
 }
 
 .status-text p {
-    color: #555;
-    font-size: 0.95em;
+    color: #333;
+    font-size: 1em;
+    font-weight: 500;
 }
 
-/* Card Styles */
-.professional-card,
-.prescription-card,
-.validation-details {
+/* Professional Card */
+.professional-card {
     background: #f8f9fa;
     padding: 25px;
     border-radius: 10px;
     border: 2px solid var(--border-color);
 }
 
-.card-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid var(--primary-color);
-}
-
-.card-title h2 {
-    color: var(--primary-color);
-    font-size: 1.4em;
-}
-
-.title-icon {
-    font-size: 1.8em;
-}
-
 /* Info Grid */
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
@@ -161,8 +128,12 @@ body {
     word-break: break-word;
 }
 
-/* Prescription Content */
-.prescription-content {
+/* Prescription Card */
+.prescription-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -179,6 +150,7 @@ body {
     color: var(--primary-color);
     font-size: 1.1em;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .prescription-value {
@@ -191,6 +163,7 @@ body {
 .guidelines-list {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .posology-list li,
@@ -214,207 +187,30 @@ body {
     background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid var(--warning-color);
-}
-
-.guidance-title {
-    color: var(--warning-color);
-    margin-bottom: 10px;
+    border-left: 4px solid var(--accent-color);
 }
 
 .guidance-text {
-    color: #666;
+    color: #333;
     font-weight: 500;
+    margin: 0;
 }
 
-/* Validation Details */
-.validation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.validation-box {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    border: 2px solid var(--border-color);
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-.validation-check {
-    width: 40px;
-    height: 40px;
-    background: var(--success-color);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-
-.validation-info h4 {
-    color: var(--primary-color);
-    margin-bottom: 5px;
-}
-
-.validation-info p {
-    color: #666;
-    font-size: 0.9em;
-}
-
+/* Document Footer */
 .document-footer {
     background: white;
     padding: 15px;
     border-radius: 8px;
     border-top: 2px solid var(--border-color);
     margin-top: 15px;
-}
-
-.document-footer p {
-    margin-bottom: 8px;
-    color: #555;
-}
-
-.document-footer strong {
-    color: var(--primary-color);
+    text-align: center;
 }
 
 .security-note {
-    background: #e8f5e9;
-    padding: 10px;
-    border-radius: 6px;
     color: var(--success-color);
     font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Important Info */
-.important-info {
-    margin-bottom: 20px;
-}
-
-.important-info h2 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.3em;
-}
-
-.info-box {
-    background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border-left: 4px solid var(--border-color);
-}
-
-.info-box.warning {
-    border-left-color: var(--warning-color);
-    background: #fff8f0;
-}
-
-.info-box.info {
-    border-left-color: #3498db;
-    background: #eef6ff;
-}
-
-.info-box h3 {
-    color: var(--primary-color);
-    margin-bottom: 12px;
     font-size: 1.1em;
-}
-
-.info-box ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.info-box li {
-    padding: 8px 0 8px 25px;
-    position: relative;
-    color: #555;
-}
-
-.info-box li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-/* Regulatory Info */
-.regulatory-info h2 {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 1.3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.regulatory-info .info-box {
-    background: white;
-    border-left-color: var(--primary-color);
-}
-
-.regulatory-info .info-box h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.regulatory-info .info-box p {
-    color: #555;
-    line-height: 1.8;
-}
-
-/* Action Section */
-.action-section {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-}
-
-.action-btn {
-    padding: 12px 24px;
-    border: 2px solid var(--primary-color);
-    background: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: 0.95em;
-}
-
-.action-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
-.print-btn:hover {
-    background: #3498db;
-    border-color: #3498db;
-}
-
-.share-btn:hover {
-    background: #e74c3c;
-    border-color: #e74c3c;
-}
-
-.download-btn:hover {
-    background: var(--success-color);
-    border-color: var(--success-color);
+    margin: 0;
 }
 
 /* Footer */
@@ -429,12 +225,7 @@ body {
 }
 
 .footer p {
-    margin: 5px 0;
-}
-
-.footer-note {
-    color: var(--primary-color);
-    font-weight: bold;
+    margin: 0;
 }
 
 /* Responsive Design */
@@ -451,10 +242,6 @@ body {
         font-size: 1.8em;
     }
 
-    .header .subtitle {
-        font-size: 1em;
-    }
-
     .main-content {
         padding: 20px;
         gap: 20px;
@@ -463,35 +250,11 @@ body {
     .info-grid {
         grid-template-columns: 1fr;
     }
-
-    .validation-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .status-banner {
-        flex-direction: column;
-    }
-
-    .action-section {
-        flex-direction: column;
-    }
-
-    .action-btn {
-        width: 100%;
-    }
-
-    .card-title h2 {
-        font-size: 1.2em;
-    }
 }
 
 @media (max-width: 480px) {
     .header-content h1 {
         font-size: 1.5em;
-    }
-
-    .header .subtitle {
-        font-size: 0.9em;
     }
 
     .main-content {
@@ -508,20 +271,8 @@ body {
         font-size: 1.5em;
     }
 
-    .status-text h2 {
-        font-size: 1.1em;
-    }
-
     .status-text p {
-        font-size: 0.85em;
-    }
-
-    .card-title h2 {
-        font-size: 1.1em;
-    }
-
-    .title-icon {
-        font-size: 1.3em;
+        font-size: 0.9em;
     }
 
     .prescription-label {
@@ -530,10 +281,6 @@ body {
 
     .prescription-value {
         font-size: 1.1em;
-    }
-
-    .info-box h3 {
-        font-size: 1em;
     }
 
     .footer {
@@ -553,18 +300,8 @@ body {
         padding: 0;
     }
 
-    .header,
-    .footer,
-    .action-section {
-        display: none;
-    }
-
     .main-content {
         box-shadow: none;
         border: 1px solid #ccc;
-    }
-
-    .card-title {
-        border-bottom: 2px solid var(--primary-color);
     }
 }
