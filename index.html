@@ -1,214 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✓ PRESCRIÇÃO VALIDADA ONLINE</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prescrição Validada</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f7f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    background:white;
+    width:90%;
+    max-width:700px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.titulo{
+    text-align:center;
+    color:#198754;
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:20px 0;
+}
+
+h2{
+    color:#198754;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+p, li{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.validacao{
+    margin-top:25px;
+    padding:15px;
+    background:#e8f5e9;
+    border-radius:10px;
+    text-align:center;
+}
+
+.codigo{
+    font-size:22px;
+    font-weight:bold;
+    color:#198754;
+}
+
+.status{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.rodape{
+    margin-top:25px;
+    font-size:14px;
+    color:#666;
+    text-align:center;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <h1>✓ PRESCRIÇÃO VALIDADA ONLINE</h1>
-                <p class="subtitle">Documento validado digitalmente e autenticado</p>
-            </div>
-        </header>
 
-        <main class="main-content">
-            <!-- Validation Status -->
-            <section class="validation-status">
-                <div class="status-banner valid">
-                    <span class="status-icon">🔒</span>
-                    <div class="status-text">
-                        <h2>Prescrição Validada Digitalmente</h2>
-                        <p>Este documento foi validado digitalmente e sua autenticidade pode ser confirmada por meio desta página.</p>
-                    </div>
-                </div>
-            </section>
+<div class="card">
 
-            <!-- Professional Info Card -->
-            <section class="professional-card">
-                <div class="card-title">
-                    <span class="title-icon">👤</span>
-                    <h2>Profissional Responsável</h2>
-                </div>
-                
-                <div class="info-grid">
-                    <div class="info-item">
-                        <label>Nome Completo</label>
-                        <p class="info-value">Amanda Pionoski Prudente</p>
-                    </div>
+    <div class="titulo">✓ PRESCRIÇÃO VALIDADA ONLINE</div>
 
-                    <div class="info-item">
-                        <label>Profissão</label>
-                        <p class="info-value">Farmacêutica Clínica</p>
-                    </div>
-
-                    <div class="info-item">
-                        <label>Conselho Regional de Farmácia</label>
-                        <p class="info-value">CRF/PR 40940</p>
-                    </div>
-
-                    <div class="info-item">
-                        <label>Registro de Qualificação Especial</label>
-                        <p class="info-value">RQE: 1058</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Prescription Section -->
-            <section class="prescription-card">
-                <div class="card-title">
-                    <span class="title-icon">💊</span>
-                    <h2>Informações da Prescrição</h2>
-                </div>
-
-                <div class="prescription-content">
-                    <div class="prescription-item">
-                        <h3 class="prescription-label">Medicamento</h3>
-                        <p class="prescription-value">Meloxicam</p>
-                    </div>
-
-                    <div class="prescription-item">
-                        <h3 class="prescription-label">Posologia</h3>
-                        <ul class="posology-list">
-                            <li>Tomar 1 comprimido por via oral, uma vez ao dia.</li>
-                            <li>Administrar após o almoço.</li>
-                            <li>Duração do tratamento: 7 dias.</li>
-                        </ul>
-                    </div>
-
-                    <div class="prescription-item">
-                        <h3 class="prescription-label">Orientações Importantes</h3>
-                        <ul class="guidelines-list">
-                            <li>Utilizar conforme prescrição.</li>
-                            <li>Não exceder a dose recomendada.</li>
-                            <li>Em caso de reações adversas ou dúvidas, procurar orientação profissional.</li>
-                        </ul>
-                    </div>
-
-                    <div class="patient-guidance">
-                        <h3 class="guidance-title">⚠️ Orientação ao Paciente</h3>
-                        <p class="guidance-text">
-                            Paciente orientado quanto ao uso correto da medicação prescrita.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Document Validation -->
-            <section class="validation-details">
-                <div class="card-title">
-                    <span class="title-icon">📋</span>
-                    <h2>Detalhes de Validação</h2>
-                </div>
-
-                <div class="validation-grid">
-                    <div class="validation-box">
-                        <div class="validation-check">✓</div>
-                        <div class="validation-info">
-                            <h4>Autenticidade Verificada</h4>
-                            <p>Documento validado digitalmente por profissional registrado</p>
-                        </div>
-                    </div>
-
-                    <div class="validation-box">
-                        <div class="validation-check">✓</div>
-                        <div class="validation-info">
-                            <h4>Profissional Qualificado</h4>
-                            <p>Farmacêutica Clínica com RQE especial</p>
-                        </div>
-                    </div>
-
-                    <div class="validation-box">
-                        <div class="validation-check">✓</div>
-                        <div class="validation-info">
-                            <h4>Regulamentação Comply</h4>
-                            <p>Conforme normas de CRF/PR e ANVISA</p>
-                        </div>
-                    </div>
-
-                    <div class="validation-box">
-                        <div class="validation-check">✓</div>
-                        <div class="validation-info">
-                            <h4>Segurança Garantida</h4>
-                            <p>Documento criptografado e autenticado</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="document-footer">
-                    <p>
-                        <strong>Data de Validação:</strong> <span id="validation-date"></span>
-                    </p>
-                    <p>
-                        <strong>Hora de Emissão:</strong> <span id="validation-time"></span>
-                    </p>
-                    <p class="security-note">
-                        🔐 Este documento é oficial e pode ser apresentado a farmácias e profissionais de saúde.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Important Information -->
-            <section class="important-info">
-                <h2>ℹ️ Informações Importantes</h2>
-                
-                <div class="info-box warning">
-                    <h3>⚠️ Avisos Importantes</h3>
-                    <ul>
-                        <li>Este documento só é válido se consultado através desta página segura</li>
-                        <li>Não compartilhe dados pessoais desnecessariamente</li>
-                        <li>Em caso de dúvidas, entre em contato com a Farmacêutica</li>
-                        <li>Medicamentos devem ser armazenados conforme indicado na bula</li>
-                    </ul>
-                </div>
-
-                <div class="info-box info">
-                    <h3>ℹ️ Sobre Meloxicam</h3>
-                    <ul>
-                        <li>Anti-inflamatório não esteroide (AINE)</li>
-                        <li>Pode causar efeitos colaterais em alguns pacientes</li>
-                        <li>Não use se tiver alergia a qualquer componente</li>
-                        <li>Consulte a bula completa do medicamento</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Regulatory Info -->
-            <section class="regulatory-info">
-                <h2>🏛️ Informações Regulatórias</h2>
-                <div class="info-box">
-                    <h3>Conselho Regional de Farmácia - Paraná (CRF/PR)</h3>
-                    <p>Este profissional está registrado e em conformidade com as regulamentações do Conselho Regional de Farmácia do Estado do Paraná. Você pode verificar a licença em www.crfpr.org.br</p>
-                </div>
-                <div class="info-box">
-                    <h3>ANVISA - Agência Nacional de Vigilância Sanitária</h3>
-                    <p>Este documento segue as normas estabelecidas pela ANVISA para prescrições de medicamentos. Para mais informações, visite www.anvisa.gov.br</p>
-                </div>
-            </section>
-
-            <!-- Action Buttons -->
-            <section class="action-section">
-                <button id="printBtn" class="action-btn print-btn">
-                    🖨️ Imprimir Prescrição
-                </button>
-                <button id="shareBtn" class="action-btn share-btn">
-                    📤 Compartilhar
-                </button>
-                <button id="downloadBtn" class="action-btn download-btn">
-                    💾 Baixar PDF
-                </button>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2026 Validação Digital de Prescrições. Documento validado e autenticado digitalmente.</p>
-            <p class="footer-note">Prescrição segura - Farmácia Clínica RQE 1058</p>
-        </footer>
+    <div class="subtitulo">
+        Documento validado digitalmente
     </div>
 
-    <script src="script.js"></script>
+    <hr>
+
+    <h2>Dados do Profissional</h2>
+
+    <p>
+        <strong>Amanda Pionoski Prudente</strong><br>
+        Farmacêutica Clínica<br>
+        CRF/PR 40940<br>
+        RQE: 1058
+    </p>
+
+    <hr>
+
+    <h2>Prescrição</h2>
+
+    <p>
+        <strong>Medicamento:</strong> Meloxicam
+    </p>
+
+    <p>
+        <strong>Posologia:</strong><br>
+        Tomar 1 comprimido por via oral, uma vez ao dia,
+        após o almoço, durante 7 dias.
+    </p>
+
+    <hr>
+
+    <h2>Orientações de Uso</h2>
+
+    <ul>
+        <li>Utilizar conforme prescrição.</li>
+        <li>Não exceder a dose recomendada.</li>
+        <li>Em caso de reações adversas, procurar orientação profissional.</li>
+        <li>Manter fora do alcance de crianças.</li>
+    </ul>
+
+    <div class="validacao">
+
+        <div>Código de Validação</div>
+
+        <div class="codigo">
+            2253535
+        </div>
+
+        <div class="status">
+            ✅ Documento Autêntico e Validado Digitalmente
+        </div>
+
+    </div>
+
+    <div class="rodape">
+        Esta página serve exclusivamente para confirmação
+        da autenticidade da prescrição e das orientações
+        farmacêuticas emitidas pela profissional responsável.
+    </div>
+
+</div>
+
 </body>
 </html>
